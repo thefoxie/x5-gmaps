@@ -4,7 +4,10 @@
 
 This is a lightweight Google Maps plugin for Vue.
 
-Also check out a [tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089) using this.
+## Samples/examples/tutorials
+
+- [Tutorial creating a COVID Heatmap](https://medium.com/javascript-in-plain-english/making-a-covid-map-using-vue-google-maps-89eb70a9f089)
+- [Address Autocomplete Example](https://xon5.medium.com/vue-google-maps-and-autocomplete-e9bf0fa3c42e)
 
 :warning: This plugin is in development, so please let me know if you find any errors.
 
@@ -74,12 +77,12 @@ Maps can take many [options](https://developers.google.com/maps/documentation/ja
 
 This component supports the following events:
 
-- `@boundsChanged` _returns new bounds_
-- `@centerChanged` _returns new center_
-- `@zoomChanged` _returns new zoom level_
+- `@bounds-changed` _returns new bounds_
+- `@center-changed` _returns new center_
+- `@zoom-changed` _returns new zoom level_
 - `@click` _returns event_
-- `@doubleClick` _returns event_
-- `@rightClick` _returns event_
+- `@double-click` _returns event_
+- `@right-click` _returns event_
 - `@mouseover` _returns event_
 - `@mouseout` _returns event_
 
@@ -117,8 +120,8 @@ This component supports the following events:
 
 - `@move` _returns new position { lat, lng }_
 - `@click` _returns event_
-- `@doubleClick` _returns event_
-- `@rightClick` _returns event_
+- `@double-click` _returns event_
+- `@right-click` _returns event_
 - ~~`@positionChanged`~~ (depreciated) _returns new position_
 
 | Props     |  Type   | Default | Description                                   |
@@ -291,13 +294,13 @@ Polylines/polygons are placed within Maps and have several props which are deriv
 This component supports the following events:
 
 - `@click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
-- `@doubleClick` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
+- `@double-click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
 - `@drag` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
-- `@dragEnd` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
-- `@dragStart` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
+- `@drag-end` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
+- `@drag-start` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
 - `@mouseover` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
-- `@rightClick` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
-- `@pathChanged` _returns array of points_
+- `@right-click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
+- `@path-changed` _returns array of points_
 
 | Props          |  Type   |   Default    | Description                                                                                  |
 | :------------- | :-----: | :----------: | :------------------------------------------------------------------------------------------- |
@@ -353,16 +356,16 @@ Rectangles/circles are placed within Maps and have several props which are deriv
 
 This component supports the following events:
 
-- `@boundsChanged` _(Only rectangles) returns new bounds_
-- `@centerChanged` _(Only circles) returns new center_
-- `@radiusChanged` _(Only circles) returns new radius_
+- `@bounds-changed` _(Only rectangles) returns new bounds_
+- `@center-changed` _(Only circles) returns new center_
+- `@radius-changed` _(Only circles) returns new radius_
 - `@click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
-- `@doubleClick` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
+- `@double-click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
 - `@drag` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
-- `@dragEnd` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
-- `@dragStart` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
+- `@drag-end` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
+- `@drag-start` _returns [MouseEvent](https://developers.google.com/maps/documentation/javascript/reference/map#MouseEvent)_
 - `@mouseover` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
-- `@rightClick` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
+- `@right-click` _returns [PolyMouseEvent](https://developers.google.com/maps/documentation/javascript/reference/polygon#PolyMouseEvent)_
 
 | Props          |  Type   |   Default    | Description                                                                        |
 | :------------- | :-----: | :----------: | :--------------------------------------------------------------------------------- |
